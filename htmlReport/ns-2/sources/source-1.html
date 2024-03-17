@@ -1,0 +1,158 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Laskin</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">laskin</a>
+</div>
+
+<h1>Coverage Summary for Class: Laskin (laskin)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Laskin</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (11/11)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (15/15)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package laskin;
+&nbsp;
+<b class="fc">&nbsp;public class Laskin {</b>
+&nbsp;
+&nbsp;    private double result;
+&nbsp;
+&nbsp;    public void setZero() {
+<b class="fc">&nbsp;        result = 0;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public double returnResult() {
+<b class="fc">&nbsp;        return result;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void add(double n) {
+<b class="fc">&nbsp;        result += n;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void subtract(double n) {
+<b class="fc">&nbsp;        result -= n;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void product(double n) {
+<b class="fc">&nbsp;        result *= n;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void divide(double n) {
+<b class="fc">&nbsp;        if (n == 0) {</b>
+<b class="fc">&nbsp;            throw new IllegalArgumentException(&quot;Cannot divide by zero&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        result /= n;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void quadrilateral(double n) {
+<b class="fc">&nbsp;        result = n * n;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void squareroot(double n) {
+<b class="fc">&nbsp;        if (n &lt; 0) {</b>
+<b class="fc">&nbsp;            throw new IllegalArgumentException(&quot;Cannot take the square root of a negative number&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        result = Math.sqrt(n);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void currentON() {
+&nbsp;        // Initialization steps if needed
+<b class="fc">&nbsp;        result = 0;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void currentOFF() {
+&nbsp;        // Cleanup steps if needed
+<b class="fc">&nbsp;    }</b>
+&nbsp;}
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-03-18 00:37</div>
+</div>
+</body>
+</html>
